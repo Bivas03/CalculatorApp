@@ -2,108 +2,86 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; 
-    font-family: 'Nunito Sans', sans-serif;
+    height:102vh;
+    background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/math-style-background_fkYcZVOd_SB_PM.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
-.calc-container{
-    /* background: #21252c; */
-    background: #151515;
-    height: 60%;
-    width: 20%;
-    min-height: 667px;
-    min-width: 375px;
-    border-radius: 24px;
-    overflow: hidden;
-}
-.display{
-    height: 40%;
-    /* background-color: aqua; */
-}
-.keypad-container{
-    height: 60%;
-    /* background-color: #292e36; */
-    background-color:#301b3f;
-    /* background-color: gray; */
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-    padding: 16px;
-    display: flex;
-    justify-content: center;
-}
-.color{
-    color: #b4a5a5;
-}
-.switch-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 16px;
-}
-.switch{
-    padding: 8px 12px;
-    border-radius: 16px;
-    background-color:#301b3f;
-}
-
-.icon-size{
-    padding: 8px;
-    font-size: 24px;
-}
-
-.not-selected{
-    color: #7a6868;
-}
-.output{
-    color: #b4a5a5;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+.main-container{   
     height: 80%;
-    margin-right: 16px;
-}
-.result{
-    font-size: 64px;
-}
-.operand{
-    color: #e77474;
-}
-.operation{
-    font-size: 36px;
-}
-.keypad{
-    width: 100%;
-    border-spacing: 16px;
-}
-/* tr{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}*/
-/* td{
-    display: flex;
-    justify-content: center;
-} */
-.key{
-    width:50px;
-    height:50px;
+    width: 20%;
+    background: rgb(184, 238, 232) ;
+    border-radius: 25px;
+    min-height: 580px;
+    min-width: 350px;
+    overflow: hidden;     
+    box-shadow: 4px 6px #797171;
+   }
+
+.display-container{
+    background:rgb(78, 88, 113);
+    height: 30%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: #151515;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 800;
-    cursor: pointer;
+    justify-content: center; 
+    flex-direction: column;
 }
-.action-keys{
-    color:#2aedc9;
+
+.keypad-container{
+    background:rgb(164, 182, 235);
+    height: 70%;      
 }
-.num-keys{
-    color: #b4a5a5;
+
+input{
+    height: 50%;
+    width: 80%;
+    padding: 3px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    -webkit-text-fill-color: rgb(13, 6, 21);
+    text-align: right;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    font-weight: 650;
+    border: 5px rgb(184, 130, 233) solid;
+    
 }
-.flip-180{
-    transform: rotateY(180deg);
+
+button{
+    height: 75px;
+    width:  70px;
+    font-size: 60px;
+    font-weight: 1000;
+    font-family:  inherit;
+    background: rgba(141, 82, 213, 0.4);
+    box-shadow: 2px 1px #797171;
+    border-color: rgb(187, 191, 207);
+    border-width: 4px;
+}
+.reset-button{
+    font-size: 40px;
+    font-weight: 1000;
+    color: rgb(103, 41, 41);
+    font-family:  inherit;
+    background: rgb(81, 102, 171);
+    margin: 6px;
+    margin-left: 12px;
+}
+
+.key-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 6px;
+}
+span{
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-start;
+    justify-content: flex-end;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-left: 7px;
 }
